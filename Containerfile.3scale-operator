@@ -31,7 +31,6 @@ COPY 3scale-operator/main.go main.go
 COPY 3scale-operator/apis/ apis/
 COPY 3scale-operator/controllers/ controllers/
 COPY 3scale-operator/pkg/ pkg/
-COPY 3scale-operator/cmd/ cmd/
 COPY 3scale-operator/version/ version/
 
 # Add patches to image and apply patches, in order.
