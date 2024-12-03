@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 # TODO: verify below format is correct.
-export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/backend@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
-export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/system@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
-export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/manticore@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
-export MEMCACHED_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/memcached@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 
 # TODO: verify how to have these updated
+#MEMCACHED_IMAGE="registry.redhat.io/rhel9/memcached@${CI_REGISTRY_MEMCACHED_DIGEST}"
 #REDIS_6_IMAGE="registry.redhat.io/rhel8/redis-6@${CI_REGISTRY_REDIS_6_DIGEST}"
 #MYSQL_8_IMAGE="registry.redhat.io/rhel8/mysql-80@${CI_REGISTRY_MYSQL_8_DIGEST}"
 #POSTGRESQL_10_IMAGE="registry.redhat.io/rhscl/postgresql-10-rhel7@${CI_REGISTRY_POSTGRESQL_10_DIGEST}"
@@ -30,7 +30,7 @@ export MEMCACHED_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenan
 #- name: RELATED_IMAGE_SYSTEM_SEARCHD
 #  value: quay.io/3scale/searchd:latest
 
-export 3SCALE_OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/3scale-operator@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export 3SCALE_OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 
 export CSV_FILE=/manifests/3scale-operator.clusterserviceversion.yaml
 
