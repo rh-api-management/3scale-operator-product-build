@@ -3,7 +3,7 @@
 # TODO: verify below format is correct.
 export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
-export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
 export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 
