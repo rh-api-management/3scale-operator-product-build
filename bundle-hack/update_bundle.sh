@@ -4,7 +4,7 @@
 export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
-export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:7515c8d6c611ecc7013ae88c6bd05a7e04a76c38e5b9dcfe94483a14481fc1db"
 export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 
 # TODO: verify how to have these updated
