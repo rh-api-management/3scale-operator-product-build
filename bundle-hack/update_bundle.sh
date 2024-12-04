@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:af6defac45e66b010b75bfcafac54ff7656eb0acfb60f84d682cbd2a5737f253"
+export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:efde03ac8d4c108990b0a6350554a466ab8c8961f1de6e6d4be25fbca536d8cb"
 export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:783ce38427e53bcfce0bc548e35cd1283fada7b708fdb3c57a6fd0ac73603b61"
 export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
 export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:7515c8d6c611ecc7013ae88c6bd05a7e04a76c38e5b9dcfe94483a14481fc1db"
