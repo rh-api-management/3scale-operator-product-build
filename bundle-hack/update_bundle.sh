@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # TODO: verify below format is correct.
-export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:af6defac45e66b010b75bfcafac54ff7656eb0acfb60f84d682cbd2a5737f253"
 export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:783ce38427e53bcfce0bc548e35cd1283fada7b708fdb3c57a6fd0ac73603b61"
 export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
 export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
-export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:010fe292d7500b426852627a63ebb2e7720cb7383d4d958a6d6b7fb2619a1aa6"
 
 # TODO: verify how to have these updated
 #MEMCACHED_IMAGE="registry.redhat.io/rhel9/memcached@${CI_REGISTRY_MEMCACHED_DIGEST}"
