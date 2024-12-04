@@ -17,19 +17,17 @@ export 3SCALE_OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod
 
 export CSV_FILE=/manifests/3scale-operator.clusterserviceversion.yaml
 
-sed -i -e "s|quay.io/3scale/3scale-operator:latest|\"${BACKEND_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/3scale/apisonator:latest|\"${BACKEND_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/3scale/apicast:latest|\"${APICAST_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/3scale/porta:latest|\"${SYSTEM_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/3scale/zync:latest|\"${ZYNC_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/3scale/searchd:latest|\"${SEARCHD_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/fedora/redis-6:latest|\"${REDIS_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/sclorg/mysql-80-c8s|\"${MYSQL_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/sclorg/postgresql-10-c8s|\"${POSTGRESQL_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/openshift/origin-cli:4.7|\"${OC_CLI_IMAGE_PULLSPEC}\"|g" \
-	-e "s|memcached:.*|\"${MEMCACHED_IMAGE_PULLSPEC}\"|g" \
-	-e "s|quay.io/3scale/3scale-operator:v.*|\"${3SCALE_OPERATOR_IMAGE_PULLSPEC}\"|g" \
-	"${CSV_FILE}"
+sed -i -e "s|quay.io/3scale/3scale-operator:latest|\"${3SCALE_OPERATOR_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/3scale/apisonator:latest|\"${BACKEND_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/3scale/apicast:latest|\"${APICAST_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/3scale/porta:latest|\"${SYSTEM_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/3scale/zync:latest|\"${ZYNC_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/3scale/searchd:latest|\"${SEARCHD_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/fedora/redis-6:latest|\"${REDIS_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/sclorg/mysql-80-c8s|\"${MYSQL_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/sclorg/postgresql-10-c8s|\"${POSTGRESQL_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/openshift/origin-cli:4.7|\"${OC_CLI_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|memcached:.*|\"${MEMCACHED_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 
 export AMD64_BUILT=$(skopeo inspect --raw docker://${3SCALE_OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="amd64")')
 export ARM64_BUILT=$(skopeo inspect --raw docker://${3SCALE_OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="arm64")')
