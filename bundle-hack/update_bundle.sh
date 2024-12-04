@@ -29,7 +29,7 @@ export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/
 #- name: RELATED_IMAGE_SYSTEM_SEARCHD
 #  value: quay.io/3scale/searchd:latest
 
-export 3SCALE_OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:aa395edded8dde4a38e1033fa47e2fad6fa0bebc1aa0889d5da47afcb8f34267"
+export 3SCALE_OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:51d05b77337faae36b3125dfa43503efd49422c145c9f9d7478ae059eb5b9081"
 
 export CSV_FILE=/manifests/3scale-operator.clusterserviceversion.yaml
 
