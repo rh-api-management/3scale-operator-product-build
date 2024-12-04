@@ -10,7 +10,8 @@
     "dockerfile": {
       "fileMatch": [
           "Containerfile.3scale-operator",
-          "Containerfile.3scale-operator-bundle"
+          "Containerfile.3scale-operator-bundle",
+          "bundle-hack/update_bundle.sh"
       ]
     }
 }
