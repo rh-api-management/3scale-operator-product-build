@@ -16,11 +16,12 @@ export MYSQL_IMAGE_PULLSPEC="registry.redhat.io/rhel8/mysql-80@sha256:af6defac45
 export POSTGRESQL_IMAGE_PULLSPEC="registry.redhat.io/rhscl/postgresql-10-rhel7@sha256:af6defac45e66b010b75bfcafac54ff7656eb0acfb60f84d682cbd2a5737f253"
 export OC_CLI_IMAGE_PULLSPEC="registry.redhat.io/openshift4/ose-cli@sha256:af6defac45e66b010b75bfcafac54ff7656eb0acfb60f84d682cbd2a5737f253"
 
-export 3SCALE_OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:8b713b6345d1f5ec9bdf435e6f3ea5b81148cfd3a93771cddc1e97b704e93208"
+export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:8b713b6345d1f5ec9bdf435e6f3ea5b81148cfd3a93771cddc1e97b704e93208"
 
 export CSV_FILE=/manifests/3scale-operator.clusterserviceversion.yaml
 
-sed -i -e "s|quay.io/3scale/3scale-operator:latest|\"${3SCALE_OPERATOR_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/3scale/3scale-operator:latest|\"${OPERATOR_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/3scale/3scale-operator:master|\"${OPERATOR_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|quay.io/3scale/apisonator:latest|\"${BACKEND_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|quay.io/3scale/apicast:latest|\"${APICAST_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|quay.io/3scale/porta:latest|\"${SYSTEM_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
@@ -32,10 +33,10 @@ sed -i -e "s|quay.io/sclorg/postgresql-10-c8s|\"${POSTGRESQL_IMAGE_PULLSPEC}\"|g
 sed -i -e "s|quay.io/openshift/origin-cli:4.7|\"${OC_CLI_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|memcached:.*|\"${MEMCACHED_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 
-export AMD64_BUILT=$(skopeo inspect --raw docker://${3SCALE_OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="amd64")')
-export ARM64_BUILT=$(skopeo inspect --raw docker://${3SCALE_OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="arm64")')
-export PPC64LE_BUILT=$(skopeo inspect --raw docker://${3SCALE_OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="ppc64le")')
-export S390X_BUILT=$(skopeo inspect --raw docker://${3SCALE_OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="s390x")')
+export AMD64_BUILT=$(skopeo inspect --raw docker://${OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="amd64")')
+export ARM64_BUILT=$(skopeo inspect --raw docker://${OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="arm64")')
+export PPC64LE_BUILT=$(skopeo inspect --raw docker://${OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="ppc64le")')
+export S390X_BUILT=$(skopeo inspect --raw docker://${OPERATOR_IMAGE_PULLSPEC} | jq -e '.manifests[] | select(.platform.architecture=="s390x")')
 
 export EPOC_TIMESTAMP=$(date +%s)
 # time for some direct modifications to the csv
@@ -84,7 +85,9 @@ csv_manifest['metadata']['annotations']['features.operators.openshift.io/token-a
 csv_manifest['metadata']['annotations']['features.operators.openshift.io/token-auth-gcp'] = 'false'
 # Ensure that other annotations are accurate
 csv_manifest['metadata']['annotations']['repository'] = 'https://github.com/3scale/3scale-operator'
-csv_manifest['metadata']['annotations']['containerImage'] = os.getenv('3SCALE_OPERATOR_IMAGE_PULLSPEC', '')
+csv_manifest['metadata']['annotations']['containerImage'] = os.getenv('OPERATOR_IMAGE_PULLSPEC', '')
+
+__dir = os.path.dirname(os.path.abspath(__file__))
 
 # Ensure that any parameters are properly defined in the spec if you do not want to
 # put them in the CSV itself
@@ -101,7 +104,7 @@ csv_manifest['spec']['icon'][0]['base64data'] = icon_data
 # Make sure that our latest nudged references are properly configured in the spec.relatedImages
 # NOTE: the names should be unique
 csv_manifest['spec']['relatedImages'] = [
-   {'name': '3scale-operator', 'image': os.getenv('3SCALE_OPERATOR_IMAGE_PULLSPEC')}
+   {'name': '3scale-operator', 'image': os.getenv('OPERATOR_IMAGE_PULLSPEC')}
 ]
 
 dump_manifest(os.getenv('CSV_FILE'), csv_manifest)
