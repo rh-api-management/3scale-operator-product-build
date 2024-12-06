@@ -19,7 +19,7 @@
         "description": "Update _IMAGE_PULLSPEC variables in update_bundle.sh",
         "fileMatch": ["bundle-hack/update_bundle.sh"],
         "matchStrings": [
-          "# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)(?: versioning=(?<versioning>[a-z-]+?))?\\sexport\\s+[A-Z_]+_IMAGE_PULLSPEC=\"(?<depName>[^\"]+)@sha256:(?<currentValue>[a-f0-9]{64})\"\\s"
+          "# renovate: datasource=(?<datasource>[a-z-]+?) packageName=(?<packageName>.+?)(?: versioning=(?<versioning>[a-z-]+?))?\\sexport\\s+[A-Z_]+_IMAGE_PULLSPEC=\"(?<depName>[^\"]+)@sha256:(?<currentValue>[a-f0-9]{64})\"\\s"
         ]
       }
     ]

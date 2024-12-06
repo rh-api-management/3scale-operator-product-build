@@ -11,15 +11,15 @@ export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/
 
 # non-3scale dependencies
 #TODO: automate updates of these with renovate
-# renovate: datasource=docker packageName=registry.redhat.io/rhel9/memcached versioning=docker
+# renovate: datasource=docker versioning=docker
 export MEMCACHED_IMAGE_PULLSPEC="registry.redhat.io/rhel9/memcached@sha256:63fde5fa8eec0d05e182c1ee52287a20846f5dddbdcfe2a6cd308860adb3984a"
-# renovate: datasource=docker packageName=registry.redhat.io/rhel8/redis-6 versioning=docker
+# renovate: datasource=docker versioning=docker
 export REDIS_IMAGE_PULLSPEC="registry.redhat.io/rhel8/redis-6@sha256:bb24ede28ec4cd2e416f6e299ee16531d8bc0a7496d3e44ac7619d9b09366737"
-# renovate: datasource=docker packageName=registry.redhat.io/rhel8/mysql-80 versioning=docker
+# renovate: datasource=docker versioning=docker
 export MYSQL_IMAGE_PULLSPEC="registry.redhat.io/rhel8/mysql-80@sha256:f6a3025d463b7763ef78ed6cce8f3f053a661a8a506e67839c98e7d9882bdf21"
-# renovate: datasource=docker packageName=registry.redhat.io/rhscl/postgresql-10-rhel7 versioning=docker
+# renovate: datasource=docker versioning=docker
 export POSTGRESQL_IMAGE_PULLSPEC="registry.redhat.io/rhscl/postgresql-10-rhel7@sha256:a95d09fc3b224f550dec3de3d23fd2dbfc0a220dc869b4ad9559ee2f85327daa"
-# renovate: datasource=docker packageName=registry.redhat.io/openshift4/ose-cli versioning=docker
+# renovate: datasource=docker versioning=docker
 export OC_CLI_IMAGE_PULLSPEC="registry.redhat.io/openshift4/ose-cli@sha256:d2323a0294225b275d7d221da41d653c098185290ecafb723494e2833316493c"
 
 export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:8b713b6345d1f5ec9bdf435e6f3ea5b81148cfd3a93771cddc1e97b704e93208"
