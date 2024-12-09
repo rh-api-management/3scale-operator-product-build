@@ -29,18 +29,12 @@ LABEL operators.operatorframework.io.metrics.project_layout=go.kubebuilder.io/v3
 LABEL operators.operatorframework.io.test.mediatype.v1=scorecard+v1
 LABEL operators.operatorframework.io.test.config.v1=tests/scorecard/
 
-# TODO: cleanup if not needed
-#LABEL com.redhat.component="3scale-operator-bundle-container" \
-#      name="3scale-mas/3scale-operator-rhel8-operator-metadata" \
-#      version="${CI_VERSION}" \
-#      summary="Lighweight, CRD based Envoy control plane for Kubernetes" \
-#      description="Lighweight, CRD based Envoy control plane for Kubernetes" \
-#      io.k8s.display-name="3scale-operator" \
-#      io.openshift.expose-services="" \
-#      io.openshift.tags="3scale, api, envoy" \
-#      upstream_repo="${CI_3scale-operator_UPSTREAM_URL}" \
-#      upstream_ref="${CI_3scale-operator_UPSTREAM_COMMIT}" \
-#      maintainer="rvazquez@redhat.com"
+LABEL summary="3scale Operator Bundle Image" \
+      description="Holds 3scale Operator metadata" \
+      io.k8s.display-name="3scale operator metadata" \
+      io.openshift.expose-services="" \
+      io.openshift.tags="3scale, api" \
+      vendor="Red Hat, Inc."
 
 # Copy files to locations specified by labels.
 COPY --from=builder /manifests /manifests/
