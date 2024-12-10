@@ -22,7 +22,7 @@ export POSTGRESQL_IMAGE_PULLSPEC="registry.redhat.io/rhscl/postgresql-10-rhel7@s
 # renovate: datasource=docker versioning=docker
 export OC_CLI_IMAGE_PULLSPEC="registry.redhat.io/openshift4/ose-cli@sha256:d2323a0294225b275d7d221da41d653c098185290ecafb723494e2833316493c"
 
-export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:8b713b6345d1f5ec9bdf435e6f3ea5b81148cfd3a93771cddc1e97b704e93208"
+export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:30784d3f5d9afc8d5f62a22327796e58914b012b90d5a123d6d658db5a590646"
 
 export CSV_FILE=/manifests/3scale-operator.clusterserviceversion.yaml
 
