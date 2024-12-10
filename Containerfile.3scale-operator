@@ -44,19 +44,12 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=$(go env GOARCH) go build -a -ldflags "${LDF
 
 FROM registry.access.redhat.com/ubi9/ubi-minimal:latest
 
-# TODO: cleanup if not needed
-# Labels consumed by Red Hat build service
-#LABEL com.redhat.component="3scale-operator-container" \
-#    name="3scale-mas/3scale-operator-rhel8-operator" \
-#    version="${CI_VERSION}"\
-#    summary="Lighweight, CRD based Envoy control plane for Kubernetes" \
-#    description="Lighweight, CRD based Envoy control plane for Kubernetes" \
-#    io.k8s.display-name="3scale-operator" \
-#    io.openshift.expose-services="" \
-#    io.openshift.tags="3scale, 3scale-amp, api, rhoam" \
-#    upstream_repo="${CI_3scale-operator_UPSTREAM_URL}" \
-#    upstream_ref="${CI_3scale-operator_UPSTREAM_COMMIT}" \
-#    maintainer="rvazquez@redhat.com"
+LABEL summary="3scale Operator container image" \
+      description="Operator provides a way to install a 3scale API Management and ability to define 3scale API definitions." \
+      io.k8s.display-name="3scale Operator" \
+      io.openshift.expose-services="" \
+      io.openshift.tags="3scale, 3scale-amp, api" \
+      vendor="Red Hat, Inc."
 
 ENV OPERATOR_BINARY_NAME="manager" \
   USER_UID=65532 \
@@ -68,12 +61,11 @@ USER root
 COPY --from=builder /workspace/${OPERATOR_BINARY_NAME} /
 RUN chown ${USER_UID} /${OPERATOR_BINARY_NAME}
 
-# TODO: cleanup if not needed
 # Install licenses
-#ENV LICENSES_DIR="/root/licenses/3scale-operator/"
-#RUN mkdir -p ${LICENSES_DIR}
-#COPY --from=builder /tmp/_output/licenses/licenses.xml ${LICENSES_DIR}
-#RUN chown ${USER_UID} ${LICENSES_DIR}/licenses.xml
+ENV LICENSES_DIR="/licenses/3scale-operator/"
+RUN mkdir -p ${LICENSES_DIR}
+COPY 3scale-operator/licenses.xml ${LICENSES_DIR}
+RUN chown ${USER_UID} ${LICENSES_DIR}/licenses.xml
 
 ENTRYPOINT ["/manager"]
 
