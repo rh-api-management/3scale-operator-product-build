@@ -61,12 +61,11 @@ USER root
 COPY --from=builder /workspace/${OPERATOR_BINARY_NAME} /
 RUN chown ${USER_UID} /${OPERATOR_BINARY_NAME}
 
-# TODO: cleanup if not needed
 # Install licenses
-#ENV LICENSES_DIR="/root/licenses/3scale-operator/"
-#RUN mkdir -p ${LICENSES_DIR}
-#COPY --from=builder /tmp/_output/licenses/licenses.xml ${LICENSES_DIR}
-#RUN chown ${USER_UID} ${LICENSES_DIR}/licenses.xml
+ENV LICENSES_DIR="/licenses/3scale-operator/"
+RUN mkdir -p ${LICENSES_DIR}
+COPY 3scale-operator/licenses.xml ${LICENSES_DIR}
+RUN chown ${USER_UID} ${LICENSES_DIR}/licenses.xml
 
 ENTRYPOINT ["/manager"]
 
