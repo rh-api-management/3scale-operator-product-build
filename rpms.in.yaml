@@ -13,4 +13,4 @@ packages:
   - skopeo
 
 context:
-  containerfile: Containerfile.marin3r-operator-bundle
+  containerfile: Containerfile.3scale-operator-bundle
