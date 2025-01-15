@@ -9,6 +9,17 @@
 }
 {
     "schema": "olm.channel",
+    "name": "alpha",
+    "package": "3scale-operator",
+    "entries": [
+        {
+            "name": "3scale-operator.v0.13.0",
+            "skipRange": "<0.12.2"
+        }
+    ]
+}
+{
+    "schema": "olm.channel",
     "name": "threescale-2.13",
     "package": "3scale-operator",
     "entries": [
@@ -85,6 +96,384 @@
             "name": "3scale-operator.v0.12.1-mas",
             "replaces": "3scale-operator.v0.11.8-mas",
             "skipRange": ">=0.11.8 <0.12.1"
+        }
+    ]
+}
+{
+    "schema": "olm.bundle",
+    "name": "3scale-operator.v0.0.1",
+    "package": "3scale-operator",
+    "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:3efa3f90d01a482768738450721492db8656db9c55cd31a649d431634d934ded",
+    "properties": [
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "apps.3scale.net",
+                "kind": "APIManager",
+                "version": "v1alpha1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "apps.3scale.net",
+                "kind": "APIManagerBackup",
+                "version": "v1alpha1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "apps.3scale.net",
+                "kind": "APIManagerRestore",
+                "version": "v1alpha1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "ActiveDoc",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "Application",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "ApplicationAuth",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "Backend",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "CustomPolicyDefinition",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "DeveloperAccount",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "DeveloperUser",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "OpenAPI",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "Product",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "ProxyConfigPromote",
+                "version": "v1beta1"
+            }
+        },
+        {
+            "type": "olm.gvk",
+            "value": {
+                "group": "capabilities.3scale.net",
+                "kind": "Tenant",
+                "version": "v1alpha1"
+            }
+        },
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "3scale-operator",
+                "version": "0.13.0"
+            }
+        },
+        {
+            "type": "olm.csv.metadata",
+            "value": {
+                "annotations": {
+                    "alm-examples": "[\n  {\n    \"apiVersion\": \"apps.3scale.net/v1alpha1\",\n    \"kind\": \"APIManager\",\n    \"metadata\": {\n      \"name\": \"apimanager-sample\"\n    },\n    \"spec\": {\n      \"wildcardDomain\": \"example.com\"\n    },\n    \"status\": {\n      \"deployments\": {\n        \"ready\": [\n          \"deployment x ready\"\n        ]\n      }\n    }\n  },\n  {\n    \"apiVersion\": \"apps.3scale.net/v1alpha1\",\n    \"kind\": \"APIManagerBackup\",\n    \"metadata\": {\n      \"name\": \"apimanagerbackup-sample\"\n    },\n    \"spec\": {\n      \"backupDestination\": {\n        \"persistentVolumeClaim\": {\n          \"volumeName\": \"mypreexistingvolume\"\n        }\n      }\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"apps.3scale.net/v1alpha1\",\n    \"kind\": \"APIManagerRestore\",\n    \"metadata\": {\n      \"name\": \"apimanagerrestore-sample\"\n    },\n    \"spec\": {\n      \"restoreSource\": {\n        \"persistentVolumeClaim\": {\n          \"claimSource\": {\n            \"claimName\": \"mybackeduppvc\"\n          }\n        }\n      }\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1alpha1\",\n    \"kind\": \"Tenant\",\n    \"metadata\": {\n      \"name\": \"tenant-sample\"\n    },\n    \"spec\": {\n      \"email\": \"admin@example.com\",\n      \"masterCredentialsRef\": {\n        \"name\": \"system-seed\"\n      },\n      \"organizationName\": \"Example.com\",\n      \"passwordCredentialsRef\": {\n        \"name\": \"ecorp-admin-secret\"\n      },\n      \"systemMasterUrl\": \"https://master.example.com\",\n      \"tenantSecretRef\": {\n        \"name\": \"ecorp-tenant-secret\",\n        \"namespace\": \"operator-test\"\n      },\n      \"username\": \"admin\"\n    },\n    \"status\": {\n      \"adminId\": 1,\n      \"tenantId\": 2\n    }\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"ActiveDoc\",\n    \"metadata\": {\n      \"name\": \"activedoc-from-url\"\n    },\n    \"spec\": {\n      \"activeDocOpenAPIRef\": {\n        \"url\": \"https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.json\"\n      },\n      \"name\": \"Operated ActiveDoc From URL\"\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"Application\",\n    \"metadata\": {\n      \"name\": \"application-sample\"\n    },\n    \"spec\": {\n      \"accountCR\": {\n        \"name\": \"developeraccount-sample\"\n      },\n      \"applicationPlanName\": \"plan01\",\n      \"description\": \"testing application \",\n      \"name\": \"testApp\",\n      \"productCR\": {\n        \"name\": \"product-sample\"\n      },\n      \"suspend\": false\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"ApplicationAuth\",\n    \"metadata\": {\n      \"name\": \"applicationauth-sample\"\n    },\n    \"spec\": {\n      \"applicationCRName\": \"application-cr-name\",\n      \"authSecretRef\": {\n        \"name\": \"auth-secret-reference\"\n      },\n      \"generateSecret\": true\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"Backend\",\n    \"metadata\": {\n      \"name\": \"backend1-sample\"\n    },\n    \"spec\": {\n      \"name\": \"Operated Backend 1\",\n      \"privateBaseURL\": \"https://api.example.com\",\n      \"systemName\": \"backend1\"\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"CustomPolicyDefinition\",\n    \"metadata\": {\n      \"name\": \"custompolicydefinition-sample\"\n    },\n    \"spec\": {\n      \"name\": \"MyCustomPolicy\",\n      \"schema\": {\n        \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n        \"configuration\": {\n          \"properties\": {\n            \"someAttr\": {\n              \"description\": \"Some attribute\",\n              \"type\": \"integer\"\n            }\n          },\n          \"type\": \"object\"\n        },\n        \"name\": \"MyCustomPolicy\",\n        \"summary\": \"some summary\",\n        \"version\": \"0.0.1\"\n      },\n      \"version\": \"0.0.1\"\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"DeveloperAccount\",\n    \"metadata\": {\n      \"name\": \"developeraccount-simple-sample\"\n    },\n    \"spec\": {\n      \"orgName\": \"Ecorp\"\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"DeveloperUser\",\n    \"metadata\": {\n      \"name\": \"developeruser-admin-sample\"\n    },\n    \"spec\": {\n      \"developerAccountRef\": {\n        \"name\": \"developeraccount1\"\n      },\n      \"email\": \"myusername2@example.com\",\n      \"passwordCredentialsRef\": {\n        \"name\": \"mysecret\"\n      },\n      \"role\": \"admin\",\n      \"username\": \"myusername2\"\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"OpenAPI\",\n    \"metadata\": {\n      \"name\": \"openapi-from-url\"\n    },\n    \"spec\": {\n      \"openapiRef\": {\n        \"url\": \"https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml\"\n      }\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"Product\",\n    \"metadata\": {\n      \"name\": \"product1-sample\"\n    },\n    \"spec\": {\n      \"name\": \"OperatedProduct 1\"\n    },\n    \"status\": {}\n  },\n  {\n    \"apiVersion\": \"capabilities.3scale.net/v1beta1\",\n    \"kind\": \"ProxyConfigPromote\",\n    \"metadata\": {\n      \"name\": \"proxyconfigpromote-sample\"\n    },\n    \"spec\": {\n      \"productCRName\": \"product1-sample\",\n      \"production\": true\n    },\n    \"status\": {}\n  }\n]",
+                    "capabilities": "Deep Insights",
+                    "categories": "Integration & Delivery",
+                    "certified": "false",
+                    "containerImage": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:30784d3f5d9afc8d5f62a22327796e58914b012b90d5a123d6d658db5a590646",
+                    "createdAt": "15 Jan 2025, 17:15",
+                    "description": "3scale Operator to provision 3scale and publish/manage API",
+                    "features.operators.openshift.io/disconnected": "true",
+                    "features.operators.openshift.io/fips-compliant": "true",
+                    "features.operators.openshift.io/proxy-aware": "false",
+                    "features.operators.openshift.io/tls-profiles": "false",
+                    "features.operators.openshift.io/token-auth-aws": "false",
+                    "features.operators.openshift.io/token-auth-azure": "false",
+                    "features.operators.openshift.io/token-auth-gcp": "false",
+                    "operators.openshift.io/infrastructure-features": "[\"Disconnected\"]",
+                    "operators.openshift.io/valid-subscription": "[\"Red Hat Integration\", \"Red Hat 3scale API Management\"]",
+                    "operators.operatorframework.io/builder": "operator-sdk-v1.2.0",
+                    "operators.operatorframework.io/project_layout": "go.kubebuilder.io/v2",
+                    "repository": "https://github.com/3scale/3scale-operator",
+                    "rht_backend_redis_requirements": "6.0.0",
+                    "rht_mysql_requirements": "8.0.0",
+                    "rht_postgres_requirements": "10.0.0",
+                    "rht_system_redis_requirements": "6.0.0",
+                    "support": "Red Hat",
+                    "tectonic-visibility": "ocs"
+                },
+                "apiServiceDefinitions": {},
+                "crdDescriptions": {
+                    "owned": [
+                        {
+                            "name": "activedocs.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
+                        },
+                        {
+                            "name": "apimanagerbackups.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
+                        },
+                        {
+                            "name": "apimanagerrestores.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
+                        },
+                        {
+                            "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
+                            "resources": [
+                                {
+                                    "name": "",
+                                    "kind": "ConfigMap",
+                                    "version": "v1"
+                                },
+                                {
+                                    "name": "",
+                                    "kind": "Deployment",
+                                    "version": "apps/v1"
+                                },
+                                {
+                                    "name": "",
+                                    "kind": "PersistentVolumeClaim",
+                                    "version": "v1"
+                                },
+                                {
+                                    "name": "",
+                                    "kind": "Route",
+                                    "version": "route.openshift.io/v1"
+                                },
+                                {
+                                    "name": "",
+                                    "kind": "Service",
+                                    "version": "v1"
+                                }
+                            ],
+                            "statusDescriptors": [
+                                {
+                                    "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployments",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:podStatuses"
+                                    ]
+                                }
+                            ],
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "applicationauths.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "ApplicationAuth",
+                            "displayName": "Application Auth",
+                            "description": "ApplicationAuth is the Schema for the applicationauths API"
+                        },
+                        {
+                            "name": "applications.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
+                        },
+                        {
+                            "name": "backends.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
+                        },
+                        {
+                            "name": "custompolicydefinitions.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
+                        },
+                        {
+                            "name": "developeraccounts.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
+                        },
+                        {
+                            "name": "developerusers.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
+                        },
+                        {
+                            "name": "openapis.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
+                        },
+                        {
+                            "name": "products.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
+                        },
+                        {
+                            "name": "proxyconfigpromotes.capabilities.3scale.net",
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
+                        },
+                        {
+                            "name": "tenants.capabilities.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
+                        }
+                    ]
+                },
+                "description": "The 3scale Operator creates and maintains the Red Hat 3scale API Management on [OpenShift](https://www.openshift.com/) in various deployment configurations.\n\n[3scale API Management](https://www.redhat.com/en/technologies/jboss-middleware/3scale) makes it easy to manage your APIs.\nShare, secure, distribute, control, and monetize your APIs on an infrastructure platform built for performance, customer control, and future growth.\n\n### Supported Features\n* **Installer** A way to install a 3scale API Management solution, providing configurability options at the time of installation\n* **Upgrade** Upgrade from previously installed 3scale API Management solution\n* **Reconcilliation** Tunable CRD parameters after 3scale API Management solution is installed\n* **Capabilities** Ability to define 3scale API definitions and set them into a 3scale API Management solution\n\n### Documentation\n[3scale api management](https://access.redhat.com/documentation/en-us/red_hat_3scale_api_management)\n[Deploying 3scale using the operator](https://access.redhat.com/documentation/en-us/red_hat_3scale_api_management/2.11/html/installing_3scale/install-threescale-on-openshift-guide#deploying-threescale-using-the-operator)\n\n### Getting help\nIf you encounter any issues while using 3scale operator, you can create an issue on our [Github repo](https://github.com/3scale/3scale-operator) for bugs, enhancements, or other requests.\n\n### Contributing\nYou can contribute by:\n\n* Raising any issues you find using 3scale Operator\n* Fixing issues by opening [Pull Requests](https://github.com/3scale/3scale-operator/pulls)\n* Talking about 3scale Operator\n\nAll bugs, tasks or enhancements are tracked as [GitHub issues](https://github.com/3scale/3scale-operator/issues).\n\n### License\n3scale Operator is licensed under the [Apache 2.0 license](https://github.com/3scale/3scale-operator/blob/master/LICENSE)\n",
+                "displayName": "3scale (development latest)",
+                "installModes": [
+                    {
+                        "type": "OwnNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "SingleNamespace",
+                        "supported": true
+                    },
+                    {
+                        "type": "MultiNamespace",
+                        "supported": false
+                    },
+                    {
+                        "type": "AllNamespaces",
+                        "supported": true
+                    }
+                ],
+                "keywords": [
+                    "3scale",
+                    "API"
+                ],
+                "labels": {
+                    "operatorframework.io/arch.amd64": "supported",
+                    "operatorframework.io/arch.arm64": "supported",
+                    "operatorframework.io/arch.ppc64le": "supported",
+                    "operatorframework.io/arch.s390x": "supported",
+                    "operatorframework.io/os.linux": "supported"
+                },
+                "links": [
+                    {
+                        "name": "GitHub",
+                        "url": "https://github.com/3scale/3scale-operator"
+                    },
+                    {
+                        "name": "Documentation",
+                        "url": "https://github.com/3scale/3scale-operator/blob/master/doc/operator-user-guide.md"
+                    }
+                ],
+                "maintainers": [
+                    {
+                        "name": "Eguzki Astiz Lezaun",
+                        "email": "eastizle+3scaleoperator@redhat.com"
+                    },
+                    {
+                        "name": "Michal Stokluska",
+                        "email": "mstoklus@redhat.com"
+                    },
+                    {
+                        "name": "Austin Cunningham",
+                        "email": "aucunnin@redhat.com"
+                    }
+                ],
+                "maturity": "stable",
+                "provider": {
+                    "name": "Red Hat"
+                }
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "",
+            "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:3efa3f90d01a482768738450721492db8656db9c55cd31a649d431634d934ded"
+        },
+        {
+            "name": "3scale-operator",
+            "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:30784d3f5d9afc8d5f62a22327796e58914b012b90d5a123d6d658db5a590646"
         }
     ]
 }
