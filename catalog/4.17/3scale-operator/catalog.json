@@ -220,135 +220,135 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -356,20 +356,20 @@
                 "displayName": "Red Hat Integration - 3scale - Managed Application Services",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -393,12 +393,12 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "msoriano+3scaleoperator@redhat.com",
-                        "name": "Miguel Soriano"
+                        "name": "Miguel Soriano",
+                        "email": "msoriano+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz"
+                        "name": "Eguzki Astiz",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -600,135 +600,135 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -736,20 +736,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -773,12 +773,12 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "msoriano+3scaleoperator@redhat.com",
-                        "name": "Miguel Soriano"
+                        "name": "Miguel Soriano",
+                        "email": "msoriano+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz"
+                        "name": "Eguzki Astiz",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -987,142 +987,142 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -1130,20 +1130,20 @@
                 "displayName": "Red Hat Integration - 3scale - Managed Application Services",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -1167,12 +1167,12 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "msoriano+3scaleoperator@redhat.com",
-                        "name": "Miguel Soriano"
+                        "name": "Miguel Soriano",
+                        "email": "msoriano+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz"
+                        "name": "Eguzki Astiz",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -1381,142 +1381,142 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -1524,20 +1524,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -1561,12 +1561,12 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "msoriano+3scaleoperator@redhat.com",
-                        "name": "Miguel Soriano"
+                        "name": "Miguel Soriano",
+                        "email": "msoriano+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz"
+                        "name": "Eguzki Astiz",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -1775,142 +1775,142 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -1918,20 +1918,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -1955,12 +1955,12 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "msoriano+3scaleoperator@redhat.com",
-                        "name": "Miguel Soriano"
+                        "name": "Miguel Soriano",
+                        "email": "msoriano+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz"
+                        "name": "Eguzki Astiz",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -2169,142 +2169,142 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -2312,20 +2312,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -2349,12 +2349,12 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "msoriano+3scaleoperator@redhat.com",
-                        "name": "Miguel Soriano"
+                        "name": "Miguel Soriano",
+                        "email": "msoriano+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz"
+                        "name": "Eguzki Astiz",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -2563,142 +2563,142 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -2706,20 +2706,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -2743,16 +2743,16 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz Lezaun"
+                        "name": "Eguzki Astiz Lezaun",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "mstoklus@redhat.com",
-                        "name": "Michal Stokluska"
+                        "name": "Michal Stokluska",
+                        "email": "mstoklus@redhat.com"
                     },
                     {
-                        "email": "aucunnin@redhat.com",
-                        "name": "Austin Cunningham"
+                        "name": "Austin Cunningham",
+                        "email": "aucunnin@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -2961,142 +2961,142 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -3104,20 +3104,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -3141,16 +3141,16 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz Lezaun"
+                        "name": "Eguzki Astiz Lezaun",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "mstoklus@redhat.com",
-                        "name": "Michal Stokluska"
+                        "name": "Michal Stokluska",
+                        "email": "mstoklus@redhat.com"
                     },
                     {
-                        "email": "aucunnin@redhat.com",
-                        "name": "Austin Cunningham"
+                        "name": "Austin Cunningham",
+                        "email": "aucunnin@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -3363,142 +3363,142 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -3506,20 +3506,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -3543,16 +3543,16 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz Lezaun"
+                        "name": "Eguzki Astiz Lezaun",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "mstoklus@redhat.com",
-                        "name": "Michal Stokluska"
+                        "name": "Michal Stokluska",
+                        "email": "mstoklus@redhat.com"
                     },
                     {
-                        "email": "aucunnin@redhat.com",
-                        "name": "Austin Cunningham"
+                        "name": "Austin Cunningham",
+                        "email": "aucunnin@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -3765,142 +3765,142 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "DeploymentConfig",
                                     "name": "",
+                                    "kind": "DeploymentConfig",
                                     "version": "apps.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "ImageStream",
                                     "name": "",
+                                    "kind": "ImageStream",
                                     "version": "image.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployment Configs",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployment Configs",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -3908,20 +3908,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -3945,16 +3945,16 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz Lezaun"
+                        "name": "Eguzki Astiz Lezaun",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "mstoklus@redhat.com",
-                        "name": "Michal Stokluska"
+                        "name": "Michal Stokluska",
+                        "email": "mstoklus@redhat.com"
                     },
                     {
-                        "email": "aucunnin@redhat.com",
-                        "name": "Austin Cunningham"
+                        "name": "Austin Cunningham",
+                        "email": "aucunnin@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -4192,149 +4192,149 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "ConfigMap",
                                     "name": "",
+                                    "kind": "ConfigMap",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Deployment",
                                     "name": "",
+                                    "kind": "Deployment",
                                     "version": "apps/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployments",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployments",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "ApplicationAuth is the Schema for the applicationauths API",
-                            "displayName": "Application Auth",
-                            "kind": "ApplicationAuth",
                             "name": "applicationauths.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ApplicationAuth",
+                            "displayName": "Application Auth",
+                            "description": "ApplicationAuth is the Schema for the applicationauths API"
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -4342,20 +4342,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -4379,16 +4379,16 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz Lezaun"
+                        "name": "Eguzki Astiz Lezaun",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "mstoklus@redhat.com",
-                        "name": "Michal Stokluska"
+                        "name": "Michal Stokluska",
+                        "email": "mstoklus@redhat.com"
                     },
                     {
-                        "email": "aucunnin@redhat.com",
-                        "name": "Austin Cunningham"
+                        "name": "Austin Cunningham",
+                        "email": "aucunnin@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -4626,149 +4626,149 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "ConfigMap",
                                     "name": "",
+                                    "kind": "ConfigMap",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Deployment",
                                     "name": "",
+                                    "kind": "Deployment",
                                     "version": "apps/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployments",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployments",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "ApplicationAuth is the Schema for the applicationauths API",
-                            "displayName": "Application Auth",
-                            "kind": "ApplicationAuth",
                             "name": "applicationauths.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ApplicationAuth",
+                            "displayName": "Application Auth",
+                            "description": "ApplicationAuth is the Schema for the applicationauths API"
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -4776,20 +4776,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -4813,16 +4813,16 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz Lezaun"
+                        "name": "Eguzki Astiz Lezaun",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "mstoklus@redhat.com",
-                        "name": "Michal Stokluska"
+                        "name": "Michal Stokluska",
+                        "email": "mstoklus@redhat.com"
                     },
                     {
-                        "email": "aucunnin@redhat.com",
-                        "name": "Austin Cunningham"
+                        "name": "Austin Cunningham",
+                        "email": "aucunnin@redhat.com"
                     }
                 ],
                 "maturity": "stable",
@@ -5060,149 +5060,149 @@
                 "crdDescriptions": {
                     "owned": [
                         {
-                            "description": "ActiveDoc is the Schema for the activedocs API",
-                            "displayName": "Active Doc",
-                            "kind": "ActiveDoc",
                             "name": "activedocs.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ActiveDoc",
+                            "displayName": "Active Doc",
+                            "description": "ActiveDoc is the Schema for the activedocs API"
                         },
                         {
-                            "description": "APIManagerBackup represents an APIManager backup",
-                            "displayName": "APIManagerBackup",
-                            "kind": "APIManagerBackup",
                             "name": "apimanagerbackups.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerBackup",
+                            "displayName": "APIManagerBackup",
+                            "description": "APIManagerBackup represents an APIManager backup"
                         },
                         {
-                            "description": "APIManagerRestore represents an APIManager restore",
-                            "displayName": "APIManagerRestore",
-                            "kind": "APIManagerRestore",
                             "name": "apimanagerrestores.apps.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "APIManagerRestore",
+                            "displayName": "APIManagerRestore",
+                            "description": "APIManagerRestore represents an APIManager restore"
                         },
                         {
-                            "description": "APIManager is the Schema for the apimanagers API",
-                            "displayName": "APIManager",
-                            "kind": "APIManager",
                             "name": "apimanagers.apps.3scale.net",
+                            "version": "v1alpha1",
+                            "kind": "APIManager",
+                            "displayName": "APIManager",
+                            "description": "APIManager is the Schema for the apimanagers API",
                             "resources": [
                                 {
-                                    "kind": "ConfigMap",
                                     "name": "",
+                                    "kind": "ConfigMap",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Deployment",
                                     "name": "",
+                                    "kind": "Deployment",
                                     "version": "apps/v1"
                                 },
                                 {
-                                    "kind": "PersistentVolumeClaim",
                                     "name": "",
+                                    "kind": "PersistentVolumeClaim",
                                     "version": "v1"
                                 },
                                 {
-                                    "kind": "Route",
                                     "name": "",
+                                    "kind": "Route",
                                     "version": "route.openshift.io/v1"
                                 },
                                 {
-                                    "kind": "Service",
                                     "name": "",
+                                    "kind": "Service",
                                     "version": "v1"
-                                }
-                            ],
-                            "specDescriptors": [
-                                {
-                                    "description": "Wildcard domain as configured in the API Manager object",
-                                    "displayName": "Wildcard Domain",
-                                    "path": "wildcardDomain",
-                                    "x-descriptors": [
-                                        "urn:alm:descriptor:com.tectonic.ui:label"
-                                    ]
                                 }
                             ],
                             "statusDescriptors": [
                                 {
-                                    "description": "APIManager Deployments",
-                                    "displayName": "Deployments",
                                     "path": "deployments",
+                                    "displayName": "Deployments",
+                                    "description": "APIManager Deployments",
                                     "x-descriptors": [
                                         "urn:alm:descriptor:com.tectonic.ui:podStatuses"
                                     ]
                                 }
                             ],
-                            "version": "v1alpha1"
+                            "specDescriptors": [
+                                {
+                                    "path": "wildcardDomain",
+                                    "displayName": "Wildcard Domain",
+                                    "description": "Wildcard domain as configured in the API Manager object",
+                                    "x-descriptors": [
+                                        "urn:alm:descriptor:com.tectonic.ui:label"
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "description": "ApplicationAuth is the Schema for the applicationauths API",
-                            "displayName": "Application Auth",
-                            "kind": "ApplicationAuth",
                             "name": "applicationauths.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ApplicationAuth",
+                            "displayName": "Application Auth",
+                            "description": "ApplicationAuth is the Schema for the applicationauths API"
                         },
                         {
-                            "description": "Application is the Schema for the applications API",
-                            "displayName": "Application",
-                            "kind": "Application",
                             "name": "applications.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Application",
+                            "displayName": "Application",
+                            "description": "Application is the Schema for the applications API"
                         },
                         {
-                            "description": "Backend is the Schema for the backends API",
-                            "displayName": "3scale Backend",
-                            "kind": "Backend",
                             "name": "backends.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Backend",
+                            "displayName": "3scale Backend",
+                            "description": "Backend is the Schema for the backends API"
                         },
                         {
-                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API",
-                            "displayName": "Custom Policy Definition",
-                            "kind": "CustomPolicyDefinition",
                             "name": "custompolicydefinitions.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "CustomPolicyDefinition",
+                            "displayName": "Custom Policy Definition",
+                            "description": "CustomPolicyDefinition is the Schema for the custompolicydefinitions API"
                         },
                         {
-                            "description": "DeveloperAccount is the Schema for the developeraccounts API",
-                            "displayName": "Developer Account",
-                            "kind": "DeveloperAccount",
                             "name": "developeraccounts.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperAccount",
+                            "displayName": "Developer Account",
+                            "description": "DeveloperAccount is the Schema for the developeraccounts API"
                         },
                         {
-                            "description": "DeveloperUser is the Schema for the developerusers API",
-                            "displayName": "Developer User",
-                            "kind": "DeveloperUser",
                             "name": "developerusers.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "DeveloperUser",
+                            "displayName": "Developer User",
+                            "description": "DeveloperUser is the Schema for the developerusers API"
                         },
                         {
-                            "description": "OpenAPI is the Schema for the openapis API",
-                            "displayName": "Open API",
-                            "kind": "OpenAPI",
                             "name": "openapis.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "OpenAPI",
+                            "displayName": "Open API",
+                            "description": "OpenAPI is the Schema for the openapis API"
                         },
                         {
-                            "description": "Product is the Schema for the products API",
-                            "displayName": "3scale Product",
-                            "kind": "Product",
                             "name": "products.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "Product",
+                            "displayName": "3scale Product",
+                            "description": "Product is the Schema for the products API"
                         },
                         {
-                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API",
-                            "displayName": "Proxy Config Promote",
-                            "kind": "ProxyConfigPromote",
                             "name": "proxyconfigpromotes.capabilities.3scale.net",
-                            "version": "v1beta1"
+                            "version": "v1beta1",
+                            "kind": "ProxyConfigPromote",
+                            "displayName": "Proxy Config Promote",
+                            "description": "ProxyConfigPromote is the Schema for the proxyconfigpromotes API"
                         },
                         {
-                            "description": "Tenant is the Schema for the tenants API",
-                            "displayName": "Tenant",
-                            "kind": "Tenant",
                             "name": "tenants.capabilities.3scale.net",
-                            "version": "v1alpha1"
+                            "version": "v1alpha1",
+                            "kind": "Tenant",
+                            "displayName": "Tenant",
+                            "description": "Tenant is the Schema for the tenants API"
                         }
                     ]
                 },
@@ -5210,20 +5210,20 @@
                 "displayName": "Red Hat Integration - 3scale",
                 "installModes": [
                     {
-                        "supported": true,
-                        "type": "OwnNamespace"
+                        "type": "OwnNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": true,
-                        "type": "SingleNamespace"
+                        "type": "SingleNamespace",
+                        "supported": true
                     },
                     {
-                        "supported": false,
-                        "type": "MultiNamespace"
+                        "type": "MultiNamespace",
+                        "supported": false
                     },
                     {
-                        "supported": true,
-                        "type": "AllNamespaces"
+                        "type": "AllNamespaces",
+                        "supported": true
                     }
                 ],
                 "keywords": [
@@ -5247,16 +5247,16 @@
                 ],
                 "maintainers": [
                     {
-                        "email": "eastizle+3scaleoperator@redhat.com",
-                        "name": "Eguzki Astiz Lezaun"
+                        "name": "Eguzki Astiz Lezaun",
+                        "email": "eastizle+3scaleoperator@redhat.com"
                     },
                     {
-                        "email": "mstoklus@redhat.com",
-                        "name": "Michal Stokluska"
+                        "name": "Michal Stokluska",
+                        "email": "mstoklus@redhat.com"
                     },
                     {
-                        "email": "aucunnin@redhat.com",
-                        "name": "Austin Cunningham"
+                        "name": "Austin Cunningham",
+                        "email": "aucunnin@redhat.com"
                     }
                 ],
                 "maturity": "stable",
