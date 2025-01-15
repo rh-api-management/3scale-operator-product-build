@@ -3,6 +3,8 @@
 # enables strict mode: `-e` fails if error, `-u` checks variable references, `-o pipefail`: prevents errors in a pipeline from being masked
 set -euo pipefail
 
+export CSV_VERSION="0.13.0"
+
 export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:af6defac45e66b010b75bfcafac54ff7656eb0acfb60f84d682cbd2a5737f253"
 export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:de202ee9c78ae42a8a315563f8257295b4c97402dae72adad93375cdb2196ed7"
 export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
@@ -92,6 +94,7 @@ csv_manifest['metadata']['annotations']['features.operators.openshift.io/token-a
 # Ensure that other annotations are accurate
 csv_manifest['metadata']['annotations']['repository'] = 'https://github.com/3scale/3scale-operator'
 csv_manifest['metadata']['annotations']['containerImage'] = os.getenv('OPERATOR_IMAGE_PULLSPEC', '')
+csv_manifest['spec']['version'] = os.getenv('CSV_VERSION', '')
 
 __dir = os.path.dirname(os.path.abspath(__file__))
 
