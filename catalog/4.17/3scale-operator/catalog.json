@@ -102,7 +102,7 @@
     "schema": "olm.bundle",
     "name": "3scale-operator.v0.0.1",
     "package": "3scale-operator",
-    "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:3efa3f90d01a482768738450721492db8656db9c55cd31a649d431634d934ded",
+    "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:2c881d825d816e8f7c8581c6d9f1c4921f82989ca2171cd0686cd823707e3db0",
     "properties": [
         {
             "type": "olm.gvk",
@@ -220,7 +220,7 @@
             "type": "olm.package",
             "value": {
                 "packageName": "3scale-operator",
-                "version": "0.13.0"
+                "version": "0.0.1"
             }
         },
         {
@@ -232,7 +232,7 @@
                     "categories": "Integration & Delivery",
                     "certified": "false",
                     "containerImage": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:30784d3f5d9afc8d5f62a22327796e58914b012b90d5a123d6d658db5a590646",
-                    "createdAt": "15 Jan 2025, 17:15",
+                    "createdAt": "11 Dec 2024, 09:59",
                     "description": "3scale Operator to provision 3scale and publish/manage API",
                     "features.operators.openshift.io/disconnected": "true",
                     "features.operators.openshift.io/fips-compliant": "true",
@@ -468,7 +468,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:3efa3f90d01a482768738450721492db8656db9c55cd31a649d431634d934ded"
+            "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:2c881d825d816e8f7c8581c6d9f1c4921f82989ca2171cd0686cd823707e3db0"
         },
         {
             "name": "3scale-operator",
