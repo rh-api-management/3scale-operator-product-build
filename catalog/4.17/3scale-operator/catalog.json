@@ -13,8 +13,7 @@
     "package": "3scale-operator",
     "entries": [
         {
-            "name": "3scale-operator.v0.13.0",
-            "skipRange": "<0.12.2"
+            "name": "3scale-operator.v0.0.1"
         }
     ]
 }
