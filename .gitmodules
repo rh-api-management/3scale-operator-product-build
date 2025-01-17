@@ -1,8 +1,8 @@
 [submodule "drift-detection"]
 	path = drift-detection
 	url = https://github.com/arewm/drift-detection
-        branch = main
+  branch = main
 [submodule "3scale-operator"]
 	path = 3scale-operator
 	url = https://github.com/3scale/3scale-operator
-        branch = master
+  branch = master
