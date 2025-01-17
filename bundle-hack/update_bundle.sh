@@ -8,6 +8,7 @@ export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/
 export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
 export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:c175ff53cfc8c1c4383d9ffc3a2972b8e6f424d4d510b93daa6566b476834db2"
 export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:010fe292d7500b426852627a63ebb2e7720cb7383d4d958a6d6b7fb2619a1aa6"
+export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:30784d3f5d9afc8d5f62a22327796e58914b012b90d5a123d6d658db5a590646"
 
 # non-3scale dependencies
 #TODO: automate updates of these with renovate
@@ -21,8 +22,6 @@ export MYSQL_IMAGE_PULLSPEC="registry.redhat.io/rhel8/mysql-80@sha256:f6a3025d46
 export POSTGRESQL_IMAGE_PULLSPEC="registry.redhat.io/rhscl/postgresql-10-rhel7@sha256:a95d09fc3b224f550dec3de3d23fd2dbfc0a220dc869b4ad9559ee2f85327daa"
 # renovate: datasource=docker versioning=docker
 export OC_CLI_IMAGE_PULLSPEC="registry.redhat.io/openshift4/ose-cli@sha256:d2323a0294225b275d7d221da41d653c098185290ecafb723494e2833316493c"
-
-export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:30784d3f5d9afc8d5f62a22327796e58914b012b90d5a123d6d658db5a590646"
 
 export CSV_FILE=/manifests/3scale-operator.clusterserviceversion.yaml
 
