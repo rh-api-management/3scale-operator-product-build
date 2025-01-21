@@ -1,0 +1,16 @@
+contentOrigin:
+  repofiles:
+    - ./ubi.repo
+arches:
+  - aarch64
+  - x86_64
+  - ppc64le
+  - s390x
+packages:
+  - jq
+  - python3
+  - python3-pip
+  - skopeo
+
+context:
+  containerfile: Containerfile.3scale-operator-bundle

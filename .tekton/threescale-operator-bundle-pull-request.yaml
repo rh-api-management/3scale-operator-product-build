@@ -15,7 +15,13 @@ metadata:
       ".tekton/threescale-operator-bundle-push.yaml".pathChanged() ||
       "Containerfile.3scale-operator-bundle".pathChanged() ||
       "3scale-operator".pathChanged() ||
-      "bundle-hack/***".pathChanged())
+      "bundle-hack/***".pathChanged() ||
+      "rpms.in.yaml".pathChanged() ||
+      "rpms.lock.yaml".pathChanged() ||
+      "requirements.txt".pathChanged() ||
+      "requirements-build.txt".pathChanged() ||
+      "requirements-build.in".pathChanged() ||
+      "pyproject.toml".pathChanged())
 
   creationTimestamp: null
   labels:
@@ -37,7 +43,13 @@ spec:
   - name: dockerfile
     value: Containerfile.3scale-operator-bundle
   - name: hermetic
-    value: "false"
+    value: "true"
+  - name: prefetch-input
+    value:
+      - {"type": "rpm", "path": "."}
+      - {"type": "pip", "path": "."}
+  - name: prefetch-dev-package-managers-enabled
+    value: "true"
   pipelineRef:
     name: single-arch-build-pipeline
   workspaces:
