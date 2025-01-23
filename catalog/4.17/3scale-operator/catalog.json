@@ -102,7 +102,7 @@
     "schema": "olm.bundle",
     "name": "3scale-operator.v0.0.1",
     "package": "3scale-operator",
-    "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:2fe512941fc644a028f9ef1cc9dde1128d8c342512956f1220ee8d8b222123a8",
+    "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:709f73d9807b83a2e0b03846b81bad4beefc619eacba22abd9cda64e3345b698",
     "properties": [
         {
             "type": "olm.gvk",
@@ -468,7 +468,7 @@
     "relatedImages": [
         {
             "name": "",
-            "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:2fe512941fc644a028f9ef1cc9dde1128d8c342512956f1220ee8d8b222123a8"
+            "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:709f73d9807b83a2e0b03846b81bad4beefc619eacba22abd9cda64e3345b698"
         },
         {
             "name": "3scale-operator",
