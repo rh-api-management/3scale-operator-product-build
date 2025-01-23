@@ -4,7 +4,7 @@
 set -euo pipefail
 
 export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:52c7d9813c7d5d1819c7516a79110f5c07d2ea8870c04419686360120f0760b4"
-export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:de202ee9c78ae42a8a315563f8257295b4c97402dae72adad93375cdb2196ed7"
+export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:f31522d545ad43e8940b879d2907fefc4339b2fd9768cbcf551ad07e3ec458c5"
 export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
 export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:5e27e2e14c1cbe80b5059ef3df43155c02e12264d0fc06123e5a7cdc79b24f6b"
 export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:4c4f01055806af561276e4c7e25ab8933ba513f3e1bda53b832ea739bd283aca"
