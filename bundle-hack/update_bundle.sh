@@ -3,7 +3,7 @@
 # enables strict mode: `-e` fails if error, `-u` checks variable references, `-o pipefail`: prevents errors in a pipeline from being masked
 set -euo pipefail
 
-export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:a22042a719f73ae9f065650596b9e74583ba114632ca03499ff4653637d9b925"
+export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:29e6c33d1232a710eb0696652c3e98523a25da5eb545bb7a21eb36cc4aa33c39"
 export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:f31522d545ad43e8940b879d2907fefc4339b2fd9768cbcf551ad07e3ec458c5"
 export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
 export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:958095dd0da7fc3e35ae13ac30db16d9757ed3edb2da66f38a31d316a86a898e"
