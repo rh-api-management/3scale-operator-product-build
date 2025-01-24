@@ -155,7 +155,7 @@
         },
         {
             "schema": "olm.bundle",
-            "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:b5443c912b8064bc5c3f9bba126d1e4ac20fc7e22ffe6567a3b6ab63377ea645"
+            "image": "quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator-bundle@sha256:97eaf01bf687de6396b72359b3985de650b0f8118f3a1a4ce86f195a10ca86f6"
         }
             ]
 }
