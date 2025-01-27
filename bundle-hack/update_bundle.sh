@@ -8,7 +8,7 @@ export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/
 export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
 export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:3516bfa7ad3dfb7a65879c641b01d18914ea0e17d1d4be0c32453834164cd999"
 export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:4c4f01055806af561276e4c7e25ab8933ba513f3e1bda53b832ea739bd283aca"
-export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:0dd1215e91651c451649a2f3ec0772dcb00cf41fe341471250dc224eeab41896"
+export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:00bffd7e82e96229d01df2f8b20234131044009c7370b505ca6b005f474ae8a1"
 
 # non-3scale dependencies
 #TODO: automate updates of these with renovate
