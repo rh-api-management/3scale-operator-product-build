@@ -3,12 +3,12 @@
 # enables strict mode: `-e` fails if error, `-u` checks variable references, `-o pipefail`: prevents errors in a pipeline from being masked
 set -euo pipefail
 
-export BACKEND_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apisonator@sha256:e88fb30089d2e69b194dd51c5b9cadbed9e13465e14200751ee2a807a87c357b"
-export APICAST_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/apicast-gateway@sha256:f31522d545ad43e8940b879d2907fefc4339b2fd9768cbcf551ad07e3ec458c5"
-export SYSTEM_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/porta@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
-export ZYNC_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/zync@sha256:3516bfa7ad3dfb7a65879c641b01d18914ea0e17d1d4be0c32453834164cd999"
-export SEARCHD_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/searchd@sha256:4c4f01055806af561276e4c7e25ab8933ba513f3e1bda53b832ea739bd283aca"
-export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant/threescale-operator@sha256:da9ea49bfaba3d2cb3bf17e7db3ca9b1ba6d136c884cf64889fd302ff7250280"
+export BACKEND_IMAGE_PULLSPEC="registry.redhat.io/3scale-amp2/backend-rhel8@sha256:e88fb30089d2e69b194dd51c5b9cadbed9e13465e14200751ee2a807a87c357b"
+export APICAST_IMAGE_PULLSPEC="registry.redhat.io/3scale-amp2/apicast-gateway-rhel8@sha256:f31522d545ad43e8940b879d2907fefc4339b2fd9768cbcf551ad07e3ec458c5"
+export SYSTEM_IMAGE_PULLSPEC="registry.redhat.io/3scale-amp2/system-rhel8@sha256:d08d7d6c98d1b922c50aa9dbb3ee636a41abb989c00e4d39eaf4b85c168cf034"
+export ZYNC_IMAGE_PULLSPEC="registry.redhat.io/3scale-amp2/zync-rhel9@sha256:3516bfa7ad3dfb7a65879c641b01d18914ea0e17d1d4be0c32453834164cd999"
+export SEARCHD_IMAGE_PULLSPEC="registry.redhat.io/3scale-amp2/manticore-rhel9@sha256:4c4f01055806af561276e4c7e25ab8933ba513f3e1bda53b832ea739bd283aca"
+export OPERATOR_IMAGE_PULLSPEC="registry.redhat.io/3scale-amp2/3scale-rhel9-operator@sha256:da9ea49bfaba3d2cb3bf17e7db3ca9b1ba6d136c884cf64889fd302ff7250280"
 
 # non-3scale dependencies
 #TODO: automate updates of these with renovate
