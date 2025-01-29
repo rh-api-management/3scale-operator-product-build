@@ -15,11 +15,11 @@ export OPERATOR_IMAGE_PULLSPEC="quay.io/redhat-user-workloads/3scale-prod-tenant
 # renovate: datasource=docker versioning=docker
 export MEMCACHED_IMAGE_PULLSPEC="registry.redhat.io/rhel9/memcached@sha256:63fde5fa8eec0d05e182c1ee52287a20846f5dddbdcfe2a6cd308860adb3984a"
 # renovate: datasource=docker versioning=docker
-export REDIS_IMAGE_PULLSPEC="registry.redhat.io/rhel8/redis-6@sha256:bb24ede28ec4cd2e416f6e299ee16531d8bc0a7496d3e44ac7619d9b09366737"
+export REDIS_IMAGE_PULLSPEC="registry.redhat.io/rhel9/redis-7@sha256:0e4e70917476b9b669c46524f409be360296d9dfbd11ee072b203d72d6b3f60e"
 # renovate: datasource=docker versioning=docker
 export MYSQL_IMAGE_PULLSPEC="registry.redhat.io/rhel8/mysql-80@sha256:f6a3025d463b7763ef78ed6cce8f3f053a661a8a506e67839c98e7d9882bdf21"
 # renovate: datasource=docker versioning=docker
-export POSTGRESQL_IMAGE_PULLSPEC="registry.redhat.io/rhscl/postgresql-10-rhel7@sha256:a95d09fc3b224f550dec3de3d23fd2dbfc0a220dc869b4ad9559ee2f85327daa"
+export POSTGRESQL_IMAGE_PULLSPEC="registry.redhat.io/rhel8/postgresql-13@sha256:db319b7e1dc1d0c4ba52765b9cc558d6e799159829de4856f48d0d47dfd37f40"
 # renovate: datasource=docker versioning=docker
 export OC_CLI_IMAGE_PULLSPEC="registry.redhat.io/openshift4/ose-cli@sha256:d2323a0294225b275d7d221da41d653c098185290ecafb723494e2833316493c"
 
@@ -32,9 +32,9 @@ sed -i -e "s|quay.io/3scale/apicast:latest|\"${APICAST_IMAGE_PULLSPEC}\"|g" "${C
 sed -i -e "s|quay.io/3scale/porta:latest|\"${SYSTEM_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|quay.io/3scale/zync:latest|\"${ZYNC_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|quay.io/3scale/searchd:latest|\"${SEARCHD_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
-sed -i -e "s|quay.io/fedora/redis-6:latest|\"${REDIS_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/fedora/redis-7|\"${REDIS_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|quay.io/sclorg/mysql-80-c8s|\"${MYSQL_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
-sed -i -e "s|quay.io/sclorg/postgresql-10-c8s|\"${POSTGRESQL_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
+sed -i -e "s|quay.io/sclorg/postgresql-13-c8s|\"${POSTGRESQL_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|quay.io/openshift/origin-cli:4.7|\"${OC_CLI_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 sed -i -e "s|mirror.gcr.io/library/memcached:.*|\"${MEMCACHED_IMAGE_PULLSPEC}\"|g" "${CSV_FILE}"
 
