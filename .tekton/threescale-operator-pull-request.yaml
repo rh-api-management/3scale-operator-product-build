@@ -54,7 +54,7 @@ spec:
     # - linux/ppc64le
     # - linux/s390x
   - name: prefetch-input
-    value: '{"type": "gomod", "path": "3scale-operator"}'
+    value: '{"type": "gomod", "path": "3scale-operator/"}'
   - name: hermetic
     value: "true"
   pipelineRef:
